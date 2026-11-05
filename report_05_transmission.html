@@ -1223,9 +1223,9 @@
         <tr><td class="metric-name">T<sub>ETC</sub></td><td>ETC stay</td><td class="med-val">4.6 d</td><td>assumed equal to T<sub>H</sub></td></tr>
         <tr><td class="metric-name">T<sub>F</sub></td><td>Funeral period</td><td class="med-val">2 d</td><td>[7, 8]</td></tr>
         <tr><td class="metric-name">p<sub>H</sub></td><td>HCF admission probability (Legrand baseline)</td><td class="med-val">0.80</td><td>[8, 9]</td></tr>
-        <tr><td class="metric-name">δ<sub>nh</sub></td><td>CFR, non-hospitalised</td><td class="med-val">0.50</td><td>supportive-care gradient</td></tr>
-        <tr><td class="metric-name">δ<sub>h</sub></td><td>CFR, regular HCF</td><td class="med-val">0.45</td><td>supportive-care gradient</td></tr>
-        <tr><td class="metric-name">δ<sub>etc</sub></td><td>CFR, ETC</td><td class="med-val">0.30</td><td>best clinical management</td></tr>
+        <tr><td class="metric-name">δ<sub>nh</sub></td><td>IFR, non-hospitalised</td><td class="med-val">0.50</td><td>supportive-care gradient</td></tr>
+        <tr><td class="metric-name">δ<sub>h</sub></td><td>IFR, regular HCF</td><td class="med-val">0.45</td><td>supportive-care gradient</td></tr>
+        <tr><td class="metric-name">δ<sub>etc</sub></td><td>IFR, ETC</td><td class="med-val">0.30</td><td>best clinical management</td></tr>
         <tr><td class="metric-name">R₀ split</td><td>Community : HCF : Funeral at baseline</td><td class="med-val">0.44 : 0.22 : 0.34</td><td>[8]</td></tr>
         <tr><td class="metric-name">κ<sub>iso</sub></td><td>HCF iso transmission factor (β<sub>H,iso</sub> / β<sub>H</sub>)</td><td class="med-val">0.1</td><td>assumed (residual nosocomial)</td></tr>
       </tbody>
@@ -1238,7 +1238,7 @@
     </div>
 
     <h3>Seeding</h3>
-    <p>The epidemic originates in Ituri, DRC, with 5 infectious cases on the inferred start date. Every other basin (including all of Uganda) begins fully susceptible and is reached only through mobility coupling.</p>
+    <p>The epidemic originates in Ituri, DRC, with 5 infectious individuals on the inferred start date. Every other basin (including all of Uganda) begins fully susceptible and is reached only through mobility coupling.</p>
 
     <h3>Inference — two-stage calibration</h3>
     <p>The model is calibrated by Approximate Bayesian Computation in two stages. <strong>Stage 1</strong> conditions on observed cross-border importations from Ituri to Uganda, requiring exactly one Uganda importation by 14 May 2026 and exactly one further importation in the window 14 to 18 May 2026. <strong>Stage 2</strong> conditions the Stage-1 posterior on the cumulative laboratory-confirmed count in Ituri at 13 June 2026 (717 cases) allowing ascertainment as low as 20 %, requiring the simulated cumulative symptomatic onsets in Ituri by 13 June to lie in the window [717, 3,585].</p>
